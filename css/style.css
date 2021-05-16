@@ -41,12 +41,17 @@ h1,
 h3 {
 	font-family: "Open Sans Condensed", sans-serif;
 	font-weight: 300;
-	margin: 1rem auto 2rem;
 	color: rgba(140, 31, 91, 1);
 	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
 }
-h1 {
-	padding: 0.25rem 3rem;
+h3 {
+	margin: 1rem auto 2rem;
+}
+
+h1{
+	margin: 0 auto;
+	padding-left: 2rem; 
+	font-size: 2rem;
 }
 
 
@@ -54,40 +59,59 @@ a.nav-link {
 	color: rgba(21, 38, 16, 1) !important;
 }
 
-button.navbar-toggler{
+a,i:hover, i:active, button.navbar-toggler{
 	color: rgba(140, 31, 91, 1) !important;
 }
 
 a.nav-link:active,
-a.nav-link:hover,
-a.active {
+a.nav-link:hover {
 	color: rgba(140, 31, 91, 1) !important;
-	text-decoration: underline;
-}
-a.nav-link:active,
-.underline {
 	text-decoration: underline;
 }
 
 .navbar {
-	padding: 0 2rem;
+	padding:0;
+	padding:0 1rem;
 }
 .navbar-brand img{
 	max-height: 60px !important;
-	margin-right: 2rem;
 	padding: 0;
 }
 a.navbar-brand{
 	padding: 0;
+	color: rgba(140, 31, 91, 1) !important;
 }
 ul.navbar-nav {
 	width: 100% !important;
 	position: relative;
-	align-items: flex-end;
+	align-items: baseline;
 }
 
 ul.navbar-nav li {
-	margin-right: 2rem;
+	margin-right: 1rem;
+}
+
+input.form-control{
+	margin: 0 !important;
+	max-width: 180px;
+	border: 1px solid rgba(140, 31, 91, 1);
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	font-size:0.9rem !important;
+}
+
+.form-inline{
+display: flex;
+flex-flow: row nowrap;
+}
+
+.btn{
+	border: 1px solid rgba(140, 31, 91, 1);
+	background-color:rgba(140, 31, 91, 1);
+	color: rgba(252, 252, 252, 1);
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	font-size:0.95rem !important;
 }
 
 .bg-light {
@@ -99,7 +123,7 @@ ul.navbar-nav li {
 	flex-flow: row wrap;
 	width: 100%;
 	max-width:1200px;
-	margin: 2rem auto 1rem;
+	margin: 1rem auto;
 	padding-bottom: 1rem;
 	min-height: 100%;
 	justify-content: center;
@@ -107,16 +131,30 @@ ul.navbar-nav li {
 
 .link-container{
 	position: relative;
-	margin-bottom: 2rem;
+	margin: 0 1rem 1rem;
 	background-color: rgba(252, 252, 252, 1);
 	border: 10px solid rgba(252, 252, 252, 1);
+	cursor: pointer;
 }
 a.living-link h3, a.dining-link h3, a.sleeping-link h3{
+	background-color: rgba(252, 252, 252,.2);
+	padding: 0 0.5rem;
+	border-radius: 10px;
 	position: absolute;
-	top: 20%;
+	top: 16%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 2rem;
+	font-size: 1.8rem;
+	
+}
+a.living-link h3:hover, a.dining-link h3:hover, a.sleeping-link h3:hover{
+	padding: 0 1rem;
+	border: 2px solid rgba(140, 31, 91, 1);
+	background-color: rgba(252, 252, 252,.5);
+	border-radius: 5px;
+	text-decoration: underline;
+	
+	
 }
 .link-container.living{
 	background-image: url(../images/living_homedecor_600x450.jpg);
@@ -124,7 +162,8 @@ a.living-link h3, a.dining-link h3, a.sleeping-link h3{
 	background-repeat: no-repeat;
 	width: 100%;
 	height:450px;
-	min-width: 780px;
+	max-width: 600px;
+
 }
 
 .link-container.dining{
@@ -146,25 +185,136 @@ a.living-link h3, a.dining-link h3, a.sleeping-link h3{
 }
 
 
+.home-decor-block {
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+margin-top: 3.5rem;
+}
+
+
+.home-decor-block img {
+	max-height: 60px;
+	padding:0 2rem;
+	margin: 0 auto;
+	
+}
+
+.view-all-link{
+	margin: 2rem auto;
+}
+
+.view-all-link a{
+	padding: .8rem 1.8rem;
+	border: 2px solid rgba(140, 31, 91, 1);
+	background-color: rgba(252, 252, 252,1);
+	color:rgba(140, 31, 91, 1) !important;
+	border-radius: 5px;
+	text-decoration: underline;
+}
+.view-all-link a:hover{
+
+	background-color:rgba(140, 31, 91, 1);
+	color: rgba(252, 252, 252, 1) !important;
+
+}
+
+
+.view-all-link a:active{
+	text-decoration: underline;
+}
+
+
+footer{
+	margin-top: .5rem;
+	background-color: rgba(252, 252, 252, 1);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+	color:rgba(21, 38, 16, .7);
+	padding: 2rem 1rem 0.5rem;
+}
+
+footer i{
+	font-size: 1.8rem;
+}
+
+footer p{
+	margin: 0.6rem 0;
+}
+
+@media(min-width: 800px){
+	
+footer{
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+footer p{
+	margin: 0;
+	width: 40%;
+	text-align: center;
+}
+
+
+footer a{
+	width: 30%;
+	text-align: left;
+}
+
+footer div{
+	width: 30%;
+	text-align: right;
+}
+
+
+
+}
+
+
 @media(min-width: 1000px){
 
 	.container {
-		flex-flow: row wrap;
-		margin-top: 3rem;
+		flex-flow: row nowrap;
+		align-items: flex-end;
 	}
+	.link-container{
+		position: relative;
+		margin: 0 .5rem;
+	}
+
 	.link-container.living{
 		order: 2;
 		background-image: url(../images/living_homedecor_500x375.jpg);
-		min-width: 500px;
+		width: 500px;
+		height: 375px;
 
 		}
 
 	.link-container.dining{
 		order: 1;
-		margin-top: 6rem;
 		}
 	.link-container.sleeping{
-		margin-top:6rem;
 	order: 3;
 	}
+
+
+	.home-decor-block {
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	}
+
+h1{
+		margin:0;
+		font-size:2.5rem;
+	}
+.home-decor-block img {
+	margin: 0;
+	padding: 0;
+}
+
+
+
 }

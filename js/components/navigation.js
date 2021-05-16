@@ -13,8 +13,8 @@ let sleepingLink = `<a class="nav-link ${pathname === "/" ? "active" : ""}" href
 let diningLink = `<a class="nav-link ${pathname === "/" ? "active" : ""}" href="/">Dining<span class="sr-only">(current)</span></a>`;
 
 
-navContainer.innerHTML = `<nav class="navbar navbar-expand-sm navbar-light bg-light">
-<a class="navbar-brand" href="/"><img src="/images/home-decor-logo_black.svg"></a>
+navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-light">
+<a class="navbar-brand" href="/"><img src="/images/home-decor-logo_black.svg"> - Stylish Living</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -34,6 +34,10 @@ navContainer.innerHTML = `<nav class="navbar navbar-expand-sm navbar-light bg-li
     ${sleepingLink}
     </li>
   </ul>
+  <form class="form-inline">
+  <input class="form-control mr-sm-2" type="search" placeholder="Find product..." aria-label="Search">
+  <button class="btn btn-outline my-2 my-sm-0" type="submit"><i class="fas fa-search" aria-label="Search"></i></button>
+</form>
 </div>
 </nav>`;
 
