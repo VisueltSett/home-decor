@@ -32,9 +32,10 @@ body {
 	flex-flow: column nowrap;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
-	background: url(/images/home-decor-logo_grey_light.svg);
+	background: url(/images/home-decor-logo_grey_35x50.png);
 	background-repeat: repeat;
 	background-color: rgba(252, 252, 252, 1);
+	overflow-x: hidden;
 }
 
 h1,
@@ -42,24 +43,27 @@ h3 {
 	font-family: "Open Sans Condensed", sans-serif;
 	font-weight: 300;
 	color: rgba(140, 31, 91, 1);
-	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
 }
 h3 {
 	margin: 1rem auto 2rem;
+	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
 }
 
-h1{
+h1 {
 	margin: 0 auto;
-	padding-left: 2rem; 
+	padding-left: 2rem;
 	font-size: 2rem;
+	text-shadow: -1px 1px 1px rgba(215, 217, 217, 1);
 }
-
 
 a.nav-link {
 	color: rgba(21, 38, 16, 1) !important;
 }
 
-a,i:hover, i:active, button.navbar-toggler{
+a,
+i:hover,
+i:active,
+button.navbar-toggler {
 	color: rgba(140, 31, 91, 1) !important;
 }
 
@@ -69,15 +73,25 @@ a.nav-link:hover {
 	text-decoration: underline;
 }
 
-.navbar {
-	padding:0;
-	padding:0 1rem;
+a.active {
+	background-color: rgba(140, 31, 91, 1);
+	color: rgba(252, 252, 252, 1) !important;
+	border-radius: 5px;
 }
-.navbar-brand img{
+
+.navbar {
+	padding: 0;
+	padding: 0 1rem;
+}
+
+.nav-container {
+	border-bottom: 2px solid rgba(215, 217, 217, 1) !important;
+}
+.navbar-brand img {
 	max-height: 60px !important;
 	padding: 0;
 }
-a.navbar-brand{
+a.navbar-brand {
 	padding: 0;
 	color: rgba(140, 31, 91, 1) !important;
 }
@@ -91,27 +105,28 @@ ul.navbar-nav li {
 	margin-right: 1rem;
 }
 
-input.form-control{
+input.form-control {
 	margin: 0 !important;
 	max-width: 180px;
 	border: 1px solid rgba(140, 31, 91, 1);
 	border-top-right-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
-	font-size:0.9rem !important;
+	font-size: 0.9rem !important;
 }
 
-.form-inline{
-display: flex;
-flex-flow: row nowrap;
+.form-inline {
+	display: flex;
+	flex-flow: row nowrap;
+	box-shadow: 2px 2px 5px rgba(215, 217, 217, 0.5);
 }
 
-.btn{
+.btn {
 	border: 1px solid rgba(140, 31, 91, 1);
-	background-color:rgba(140, 31, 91, 1);
+	background-color: rgba(140, 31, 91, 1);
 	color: rgba(252, 252, 252, 1);
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
-	font-size:0.95rem !important;
+	font-size: 0.95rem !important;
 }
 
 .bg-light {
@@ -122,199 +137,190 @@ flex-flow: row nowrap;
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
-	max-width:1200px;
-	margin: 1rem auto;
+	max-width: 1200px;
+	margin: 2rem auto;
 	padding-bottom: 1rem;
 	min-height: 100%;
 	justify-content: center;
 }
 
-.link-container{
+.link-container {
 	position: relative;
 	margin: 0 1rem 1rem;
 	background-color: rgba(252, 252, 252, 1);
 	border: 10px solid rgba(252, 252, 252, 1);
 	cursor: pointer;
+	box-shadow: 2px 2px 5px rgba(215, 217, 217, 0.5);
 }
-a.living-link h3, a.dining-link h3, a.sleeping-link h3{
-	background-color: rgba(252, 252, 252,.2);
+a.living-link h3,
+a.dining-link h3,
+a.sleeping-link h3 {
+	background-color: rgba(252, 252, 252, 0.1);
 	padding: 0 0.5rem;
 	border-radius: 10px;
 	position: absolute;
-	top: 16%;
+	top: 18%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 1.8rem;
-	
 }
-a.living-link h3:hover, a.dining-link h3:hover, a.sleeping-link h3:hover{
+a.living-link h3:hover,
+a.dining-link h3:hover,
+a.sleeping-link h3:hover {
 	padding: 0 1rem;
-	border: 2px solid rgba(140, 31, 91, 1);
-	background-color: rgba(252, 252, 252,.5);
+	border: 1px solid rgba(140, 31, 91, 1);
+	background-color: rgba(252, 252, 252, 0.5);
 	border-radius: 5px;
 	text-decoration: underline;
-	
-	
 }
-.link-container.living{
+.link-container.living {
 	background-image: url(../images/living_homedecor_600x450.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height:450px;
+	height: 450px;
 	max-width: 600px;
-
 }
 
-.link-container.dining{
+.link-container.dining {
 	background-image: url(../images/dining_homedecor_280x327.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height:327px;
+	height: 327px;
 	max-width: 280px;
 }
 
-.link-container.sleeping{
+.link-container.sleeping {
 	background-image: url(../images/sleeping_homedecor_280x327.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height:327px;
+	height: 327px;
 	max-width: 280px;
 }
 
-
 .home-decor-block {
-display: flex;
-flex-flow: column nowrap;
-justify-content: center;
-align-items: center;
-margin-top: 3.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
 }
-
 
 .home-decor-block img {
 	max-height: 60px;
-	padding:0 2rem;
+	padding: 0 2rem;
 	margin: 0 auto;
-	
 }
 
-.view-all-link{
+.view-all-link {
 	margin: 2rem auto;
 }
 
-.view-all-link a{
-	padding: .8rem 1.8rem;
+.view-all-link a {
+	padding: 0.5rem 1.5rem;
 	border: 2px solid rgba(140, 31, 91, 1);
-	background-color: rgba(252, 252, 252,1);
-	color:rgba(140, 31, 91, 1) !important;
+	background-color: rgba(252, 252, 252, 1);
+	color: rgba(140, 31, 91, 1) !important;
 	border-radius: 5px;
 	text-decoration: underline;
+	box-shadow: 2px 2px 5px rgba(215, 217, 217, 0.5);
 }
-.view-all-link a:hover{
-
-	background-color:rgba(140, 31, 91, 1);
+.view-all-link a:hover {
+	background-color: rgba(140, 31, 91, 1);
 	color: rgba(252, 252, 252, 1) !important;
-
 }
 
-
-.view-all-link a:active{
+.view-all-link a:active {
 	text-decoration: underline;
 }
 
-
-footer{
-	margin-top: .5rem;
+footer {
+	margin-top: 0.5rem;
 	background-color: rgba(252, 252, 252, 1);
 	display: flex;
+	flex-shrink: 0;
 	flex-flow: column nowrap;
 	align-items: flex-end;
-	color:rgba(21, 38, 16, .7);
-	padding: 2rem 1rem 0.5rem;
+	color: rgba(21, 38, 16, 0.7);
+	padding: 0.5rem 1rem;
+	border-top: 2px solid rgba(215, 217, 217, 1) !important;
 }
 
-footer i{
+footer i {
 	font-size: 1.8rem;
 }
 
-footer p{
+footer p {
 	margin: 0.6rem 0;
 }
 
-@media(min-width: 800px){
-	
-footer{
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	align-items: flex-end;
+.sticky-footer-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1 0 auto;
 }
 
-footer p{
-	margin: 0;
-	width: 40%;
-	text-align: center;
+@media (min-width: 800px) {
+	footer {
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	footer p {
+		margin: 0;
+		width: 40%;
+		text-align: center;
+	}
+
+	footer a {
+		width: 30%;
+		text-align: left;
+	}
+
+	footer div {
+		width: 30%;
+		text-align: right;
+	}
 }
 
-
-footer a{
-	width: 30%;
-	text-align: left;
-}
-
-footer div{
-	width: 30%;
-	text-align: right;
-}
-
-
-
-}
-
-
-@media(min-width: 1000px){
-
+@media (min-width: 1000px) {
 	.container {
 		flex-flow: row nowrap;
 		align-items: flex-end;
 	}
-	.link-container{
+	.link-container {
 		position: relative;
-		margin: 0 .5rem;
+		margin: 0 0.5rem;
 	}
 
-	.link-container.living{
+	.link-container.living {
 		order: 2;
 		background-image: url(../images/living_homedecor_500x375.jpg);
 		width: 500px;
 		height: 375px;
-
-		}
-
-	.link-container.dining{
-		order: 1;
-		}
-	.link-container.sleeping{
-	order: 3;
 	}
 
+	.link-container.dining {
+		order: 1;
+	}
+	.link-container.sleeping {
+		order: 3;
+	}
 
 	.home-decor-block {
-	flex-flow: row nowrap;
-	align-items: flex-end;
+		flex-flow: row nowrap;
+		align-items: flex-end;
 	}
 
-h1{
-		margin:0;
-		font-size:2.5rem;
+	h1 {
+		margin: 0;
+		font-size: 2.5rem;
 	}
-.home-decor-block img {
-	margin: 0;
-	padding: 0;
-}
-
-
-
+	.home-decor-block img {
+		margin: 0;
+		padding: 0;
+	}
 }
