@@ -14,7 +14,7 @@ let diningLink = `<a class="nav-link ${pathname === "/" ? "active" : ""}" href="
 
 
 navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-light">
-<a class="navbar-brand" href="/"><img src="../.././images/home-decor-logo_black.svg"> - Stylish Living</a>
+<a class="navbar-brand" href="/"><img src="../../.././images/home-decor-logo_black.svg"> - Stylish Living</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
