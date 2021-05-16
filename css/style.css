@@ -32,7 +32,7 @@ body {
 	flex-flow: column nowrap;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
-	background: url(/images/home-decor-logo_grey_35x50.png);
+	background: url(.././images/home-decor-logo_grey_35x50.png);
 	background-repeat: repeat;
 	background-color: rgba(252, 252, 252, 1);
 	overflow-x: hidden;
