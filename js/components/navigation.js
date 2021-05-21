@@ -25,10 +25,10 @@ navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-li
       <a class="nav-link active ${pathname === "/" ? "active" : ""}" href="/">Home<span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      ${livingLink}
+    ${diningLink}
     </li>
     <li class="nav-item">
-    ${diningLink}
+    ${livingLink}
     </li>
     <li class="nav-item">
     ${sleepingLink}

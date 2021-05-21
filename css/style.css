@@ -60,7 +60,8 @@ a.nav-link {
 	color: rgba(21, 38, 16, 1) !important;
 }
 
-a, footer i,
+a,
+footer i,
 i:hover,
 i:active,
 button.navbar-toggler {
@@ -183,7 +184,7 @@ a.sleeping-link h3:hover {
 }
 
 .link-container.dining {
-	background-image: url(../images/dining_homedecor_280x327.jpg);
+	background-image: url(../images/home-decor-dining-background-edit.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
