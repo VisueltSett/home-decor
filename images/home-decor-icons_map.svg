@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 167.75" style="enable-background:new 0 0 150 167.75;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8C1F5B;}
+	.st1{fill:#F0F2F2;}
+	.st2{fill:#FFFFFF;stroke:#8C1F5B;stroke-width:4.7806;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#8C1F5B;stroke-width:4.9333;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#8C1F5B;stroke-width:5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#8C1F5B;stroke-width:4.9239;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;stroke:#8C1F5B;stroke-width:4.9342;stroke-miterlimit:10;}
+	.st7{fill:#8C1F5B;stroke:#FFFFFF;stroke-width:4.9396;stroke-miterlimit:10;}
+	.st8{fill:#FFFFFF;}
+</style>
+<g id="mail">
+</g>
+<g id="map">
+	<g>
+		<g>
+			<path class="st0" d="M140,21c2.76,0,5,2.24,5,5v130c0,2.76-2.24,5-5,5H10c-2.76,0-5-2.24-5-5V26c0-2.76,2.24-5,5-5H140 M140,16
+				H10C4.48,16,0,20.48,0,26v130c0,5.52,4.48,10,10,10h130c5.52,0,10-4.48,10-10V26C150,20.48,145.52,16,140,16L140,16z"/>
+		</g>
+		<path class="st2" d="M6,20l70,35.87L6,20z"/>
+		<line class="st3" x1="33.77" y1="116.81" x2="4" y2="20"/>
+		<line class="st4" x1="147.5" y1="89.5" x2="100.5" y2="19.01"/>
+		<polyline class="st5" points="97.28,17.5 111,161 37.7,107.79 		"/>
+		<line class="st4" x1="31.5" y1="109.45" x2="47.5" y2="161.5"/>
+		<line class="st4" x1="75" y1="55.36" x2="103.74" y2="71.78"/>
+		<line class="st6" x1="4" y1="161" x2="96.77" y2="18.5"/>
+		<g>
+			<polygon class="st0" points="75.35,117.7 108.21,47 42.49,47 			"/>
+			<circle class="st0" cx="75" cy="35" r="35"/>
+			<g>
+				<circle class="st7" cx="75" cy="35" r="14.5"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				
+					<image style="overflow:visible;opacity:0.6;" width="26" height="10" xlink:href="7A880F43.png"  transform="matrix(1 0 0 1 62.9657 116.9657)">
+				</image>
+				<g>
+					<ellipse class="st0" cx="75.5" cy="120.5" rx="10.5" ry="2.5"/>
+				</g>
+			</g>
+			<ellipse class="st8" cx="75.5" cy="119.5" rx="2.5" ry="0.5"/>
+		</g>
+	</g>
+</g>
+</svg>

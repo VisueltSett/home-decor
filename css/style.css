@@ -138,6 +138,7 @@ input.form-control {
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
+	min-height: 100%;
 	max-width: 1200px;
 	margin: 2rem auto;
 	padding-bottom: 1rem;
@@ -221,12 +222,12 @@ a.sleeping-link h3:hover {
 
 .view-all-link a {
 	padding: 0.5rem 1.5rem;
-	border: 2px solid rgba(140, 31, 91, 1);
+	border: 1px solid rgba(140, 31, 91, 1);
 	background-color: rgba(252, 252, 252, 1);
 	color: rgba(140, 31, 91, 1) !important;
 	border-radius: 5px;
 	text-decoration: underline;
-	box-shadow: 2px 2px 5px rgba(215, 217, 217, 0.5);
+	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
 }
 .view-all-link a:hover {
 	background-color: rgba(140, 31, 91, 1);
@@ -243,18 +244,41 @@ footer {
 	display: flex;
 	flex-shrink: 0;
 	flex-flow: column nowrap;
-	align-items: flex-end;
+	align-items: center;
 	color: rgba(21, 38, 16, 0.7);
 	padding: 0.5rem 1rem;
 	border-top: 2px solid rgba(215, 217, 217, 1) !important;
 }
 
 footer i {
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
-footer p {
-	margin: 0.6rem 0;
+.mail-link{
+	max-height: 2rem;
+	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
+}
+
+.map-link{
+	max-height: 2.2rem;
+	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
+}
+
+.footer-center-column{
+	margin: 2rem;
+	width: 100%;
+	text-align: left;
+}
+
+footer a {
+	width: 100%;
+	text-align: left;
+}
+
+footer div {
+	width: 100%;
+	text-align: left;
+	line-height: 2rem;
 }
 
 .sticky-footer-wrapper {
@@ -270,20 +294,26 @@ footer p {
 		align-items: flex-end;
 	}
 
-	footer p {
+	.footer-center-column{
 		margin: 0;
-		width: 40%;
+		width: 50%;
 		text-align: center;
 	}
 
 	footer a {
-		width: 30%;
+		width: 25%;
 		text-align: left;
 	}
 
 	footer div {
-		width: 30%;
+		width: 25%;
 		text-align: right;
+	}
+	.mail-link{
+		max-height: 2.2rem;
+	}	
+	.map-link{
+		max-height: 2.4rem;
 	}
 }
 

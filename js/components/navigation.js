@@ -6,11 +6,14 @@ export default function createNav() {
 const navContainer = document.querySelector(".nav-container");
 
 
-let livingLink = `<a class="nav-link ${pathname === "/" ? "active" : ""}" href="/">Living<span class="sr-only">(current)</span></a>`;
+let livingLink = `<a class="nav-link ${pathname === "/living.html" ? "active" : ""}" href="living.html">Living<span class="sr-only">(current)</span></a>`;
 
-let sleepingLink = `<a class="nav-link ${pathname === "/" ? "active" : ""}" href="/">Sleeping<span class="sr-only">(current)</span></a>`;
+let sleepingLink = `<a class="nav-link ${pathname === "/sleeping.html" ? "active" : ""}" href="sleeping.html">Sleeping<span class="sr-only">(current)</span></a>`;
 
-let diningLink = `<a class="nav-link ${pathname === "/" ? "active" : ""}" href="/">Dining<span class="sr-only">(current)</span></a>`;
+let diningLink = `<a class="nav-link ${pathname === "/dining.html" ? "active" : ""}" href="dining.html">Dining<span class="sr-only">(current)</span></a>`;
+
+let productsLink = `<a class="nav-link ${pathname === "/products.html" ? "active" : ""}" href="products.html">All Products<span class="sr-only">(current)</span></a>`;
+
 
 
 navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -22,7 +25,7 @@ navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-li
 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
     <li class="nav-item">
-      <a class="nav-link active ${pathname === "/" ? "active" : ""}" href="/">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-link ${pathname === "/" ? "active" : ""}" href="/">Home<span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
     ${diningLink}
@@ -32,6 +35,9 @@ navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-li
     </li>
     <li class="nav-item">
     ${sleepingLink}
+    </li>
+    <li class="nav-item">
+    ${productsLink}
     </li>
   </ul>
   <form class="form-inline">
