@@ -134,6 +134,37 @@ input.form-control {
 	background-color: rgba(252, 252, 252, 1) !important;
 }
 
+.products-header-block h1 {
+	margin: 1.5rem 1rem 0.5rem;
+}
+
+#home-decor-logo-products {
+	max-height: 40px;
+	margin-top: 1rem;
+	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
+}
+#products-header-img h3 {
+	max-width: 80%;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+
+#products-header-img {
+	background-image: linear-gradient(
+			rgb(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0.1)
+		),
+		url(.././images/all-products-background_600x266.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: screen;
+	height: 266px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
 .container {
 	display: flex;
 	flex-flow: row wrap;
@@ -146,7 +177,18 @@ input.form-control {
 	justify-content: center;
 }
 
-.link-container {
+.product img {
+	width: 100%;
+	max-width: 600px;
+	filter: opacity(0.9);
+}
+.product-category {
+	font-size: 0.8rem;
+	color: rgba(21, 38, 16, 0.6);
+}
+
+.link-container,
+.product {
 	position: relative;
 	margin: 0 1rem 1rem;
 	background-color: rgba(252, 252, 252, 1);
@@ -254,17 +296,19 @@ footer i {
 	font-size: 2rem;
 }
 
-.mail-link{
+.mail-link {
+	margin-right: 0.5rem;
 	max-height: 2rem;
 	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
 }
 
-.map-link{
+.map-link {
+	margin-right: 0.5rem;
 	max-height: 2.2rem;
 	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
 }
 
-.footer-center-column{
+.footer-center-column {
 	margin: 2rem;
 	width: 100%;
 	text-align: left;
@@ -287,14 +331,54 @@ footer div {
 	flex: 1 0 auto;
 }
 
+@media (max-width: 480px) {
+	#products-header-img {
+		visibility: hidden;
+		height: 140px;
+	}
+
+	#products-header-img h3,
+	#home-decor-logo-products {
+		visibility: visible;
+	}
+}
+
+@media (min-width: 680px) {
+	#products-header-img {
+		background-image: linear-gradient(
+				rgb(255, 255, 255, 0.1),
+				rgba(255, 255, 255, 0.1)
+			),
+			url(.././images/all-products-background_800x354.jpg);
+		height: 354px;
+	}
+
+	#products-header-img h3 {
+		font-size: 1.8rem;
+	}
+	#home-decor-logo-products {
+		height: 100px;
+		margin-top: 2rem;
+	}
+}
+
 @media (min-width: 800px) {
+	#products-header-img {
+		background-image: linear-gradient(
+				rgb(255, 255, 255, 0.1),
+				rgba(255, 255, 255, 0.1)
+			),
+			url(.././images/all-products-background_1000x443.jpg);
+		height: 443px;
+	}
+
 	footer {
 		flex-flow: row nowrap;
 		justify-content: flex-end;
 		align-items: flex-end;
 	}
 
-	.footer-center-column{
+	.footer-center-column {
 		margin: 0;
 		width: 50%;
 		text-align: center;
@@ -309,15 +393,25 @@ footer div {
 		width: 25%;
 		text-align: right;
 	}
-	.mail-link{
+	.mail-link {
 		max-height: 2.2rem;
-	}	
-	.map-link{
+	}
+	.map-link {
 		max-height: 2.4rem;
 	}
 }
 
 @media (min-width: 1000px) {
+	#products-header-img {
+		background-image: linear-gradient(
+				rgb(255, 255, 255, 0.1),
+				rgba(255, 255, 255, 0.1)
+			),
+			url(.././images/all-products-background_1200x531.jpg);
+		height: 531px;
+		background-position: bottom left;
+	}
+
 	.container {
 		flex-flow: row nowrap;
 		align-items: flex-end;
