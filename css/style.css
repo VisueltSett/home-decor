@@ -71,7 +71,7 @@ button.navbar-toggler {
 
 a.nav-link:active,
 a.nav-link:hover {
-	color: rgba(252, 252, 252, 1) !important;
+	color: rgba(140, 31, 91, 1) !important;
 	text-decoration: underline;
 }
 
@@ -79,6 +79,11 @@ a.active {
 	background-color: rgba(140, 31, 91, 1);
 	color: rgba(252, 252, 252, 1) !important;
 	border-radius: 5px;
+}
+a.active:hover,
+a.active:active {
+	color: rgba(252, 252, 252, 1) !important;
+	text-decoration: underline;
 }
 
 .navbar {
