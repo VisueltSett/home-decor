@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "Moniqa";
+	font-weight: 100 900;
+	font-style: normal;
+	font-stretch: normal;
+	src: url("CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf") format("truetype");
+	src: url("CYR_CT_OP_Emberly Regular [wdth,wght]-VF.otf") format("opentype");
+	font-display: swap;
+}
