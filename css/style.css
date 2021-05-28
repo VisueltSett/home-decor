@@ -36,6 +36,7 @@ body {
 	background-repeat: repeat;
 	background-color: rgba(252, 252, 252, 1);
 	overflow-x: hidden;
+	width: 100%;
 }
 
 h1,
@@ -173,9 +174,8 @@ input.form-control {
 .container {
 	display: flex;
 	flex-flow: row wrap;
-	width: 100%;
+	min-width: 100%;
 	min-height: 100%;
-	max-width: 1200px;
 	margin: 2rem auto;
 	padding-bottom: 1rem;
 	min-height: 100%;
@@ -216,37 +216,37 @@ a.sleeping-link h3 {
 a.living-link h3:hover,
 a.dining-link h3:hover,
 a.sleeping-link h3:hover {
-	padding: 0 1rem;
+	padding: 1 1.5rem;
 	border: 1px solid rgba(140, 31, 91, 1);
 	background-color: rgba(252, 252, 252, 0.5);
 	border-radius: 5px;
 	text-decoration: underline;
 }
 .link-container.living {
-	background-image: url(../images/living_HomeDecor_600x450.jpg);
+	background-image: url(../images/Background_HomeDecor_570x450.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 450px;
-	max-width: 600px;
+	max-width: 570px;
 }
 
 .link-container.dining {
-	background-image: url(../images/home-decor-dining-background-edit.jpg);
+	background-image: url(../images/home-decor-dining-background-370x450.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 327px;
-	max-width: 280px;
+	height: 450px;
+	max-width: 370px;
 }
 
 .link-container.sleeping {
-	background-image: url(../images/sleeping_homedecor_280x327.jpg);
+	background-image: url(../images/home-decor-sleeping-background-370x450.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 327px;
-	max-width: 280px;
+	height: 450px;
+	max-width: 370px;
 }
 
 .home-decor-block {
@@ -304,13 +304,13 @@ footer i {
 .mail-link {
 	margin-right: 0.5rem;
 	max-height: 2rem;
-	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
+	text-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
 }
 
 .map-link {
 	margin-right: 0.5rem;
 	max-height: 2.2rem;
-	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
+	text-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
 }
 
 .footer-center-column {
@@ -340,6 +340,24 @@ footer div {
 	#products-header-img {
 		visibility: hidden;
 		height: 140px;
+	}
+
+	.link-container.living {
+		background-image: url(../images/Background_HomeDecor_380x300.jpg);
+		height: 300px;
+		max-width: 380px;
+	}
+
+	.link-container.dining {
+		background-image: url(../images/home-decor-dining-background-247x300.jpg);
+		height: 300px;
+		max-width: 247px;
+	}
+
+	.link-container.sleeping {
+		background-image: url(../images/home-decor-sleeping-background-247x300.jpg);
+		height: 300px;
+		max-width: 247px;
 	}
 
 	#products-header-img h3,
