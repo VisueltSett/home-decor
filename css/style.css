@@ -30,20 +30,22 @@ body {
 body {
 	display: flex;
 	flex-flow: column nowrap;
-	font-family: "Inter",sans-serif;
+	font-family: "Inter", sans-serif;
 	/* font-family: "Open Sans", sans-serif; */
 	font-weight: 400;
-	background-image:linear-gradient(
-		rgb(252, 252, 252, 0.90),
-		rgba(252, 252, 252, 0.90)
-	), url(.././images/home-decor-logo_small-grey-moniqa.svg);
+	background-image: linear-gradient(
+			rgb(252, 252, 252, 0.9),
+			rgba(252, 252, 252, 0.9)
+		),
+		url(.././images/home-decor-logo_small-grey-moniqa.svg);
 	background-repeat: repeat;
 	background-color: rgba(252, 252, 252, 1);
 	overflow-x: hidden;
 	width: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
 	font-family: "Moniqa", serif;
 	/* font-family: "Open Sans Condensed", sans-serif; */
 	font-weight: 300;
@@ -55,12 +57,12 @@ h1, h2 {
 }
 
 h3 {
-	font-family: "Inter",sans-serif;
+	font-family: "Inter", sans-serif;
 	margin: 1rem auto 2rem;
 	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
 }
 
-h2{
+h2 {
 	margin-top: 4rem;
 }
 
@@ -77,14 +79,13 @@ button.navbar-toggler {
 }
 
 i:hover,
-i:active, footer a:hover,
+i:active,
+footer a:hover,
 footer a:active {
 	color: rgba(39, 115, 107, 1) !important;
 }
 
-.btn
-
-a.nav-link:active,
+.btn a.nav-link:active,
 a.nav-link:hover {
 	color: rgba(140, 31, 91, 1) !important;
 	text-decoration: underline;
@@ -225,7 +226,7 @@ a.sleeping-link h3 {
 a.living-link h3:hover,
 a.dining-link h3:hover,
 a.sleeping-link h3:hover {
-	padding: .5rem 1rem;
+	padding: 0.5rem 1rem;
 	border: 1px solid rgba(39, 115, 107, 1);
 	background-color: rgba(252, 252, 252, 0.8);
 	border-radius: 5px;
@@ -286,9 +287,11 @@ a.sleeping-link h3:hover {
 	text-decoration: underline;
 	box-shadow: 2px 2px 3px rgba(21, 38, 16, 0.4);
 }
-.view-all-link a:hover, .btn:hover, .btn:active{
+.view-all-link a:hover,
+.btn:hover,
+.btn:active {
 	background-color: rgba(39, 115, 107, 1);
-	color: rgba(252, 252, 252, 1)!important;
+	color: rgba(252, 252, 252, 1) !important;
 	border: 1px solid rgba(39, 115, 107, 1);
 }
 
