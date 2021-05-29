@@ -16,9 +16,18 @@
 .home-decor-5-rgba {
 	color: rgba(21, 38, 16, 1);
 }
+:root {
+	--body-font-family: "Inter", "Open Sans", sans-serif;
+	--inter-wght: 200;
+	--header-font-family: "Moniqa", "Open Sans Condensed", sans-serif;
+	--moniqa-wght: 200;
+	--moniqa-opsz: 90;
+}
 
 * {
 	box-sizing: border-box;
+	font-variation-settings: "wght" var(--inter-wght) var(--moniqa-wght),
+		"opsz" (--moniqa-opsz);
 }
 html,
 body {
@@ -30,36 +39,53 @@ body {
 body {
 	display: flex;
 	flex-flow: column nowrap;
-	font-family: "Inter", sans-serif;
-	/* font-family: "Open Sans", sans-serif; */
-	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
 	background-image: linear-gradient(
 			rgb(252, 252, 252, 0.9),
 			rgba(252, 252, 252, 0.9)
 		),
 		url(.././images/home-decor-logo_small-grey-moniqa.svg);
 	background-repeat: repeat;
+	background-blend-mode: normal;
 	background-color: rgba(252, 252, 252, 1);
 	overflow-x: hidden;
 	width: 100%;
 }
 
+@supports (font-variation-settings: "wght" 200) {
+	body {
+		font-family: var(--body-font-family);
+		letter-spacing: -0.02rem;
+	}
+}
+
 h1,
 h2 {
-	font-family: "Moniqa", serif;
-	/* font-family: "Open Sans Condensed", sans-serif; */
-	font-weight: 300;
+	font-family: "Open Sans Condensed", sans-serif;
 	color: rgba(140, 31, 91, 1);
 	margin: 0 auto;
 	padding-left: 2rem;
 	font-size: 2rem;
 	text-shadow: -1px 1px 1px rgba(215, 217, 217, 1);
 }
+@supports (font-variation-settings: "wght" 200) {
+	h1,
+	h2 {
+		font-family: var(--header-font-family);
+	}
+}
 
 h3 {
-	font-family: "Inter", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 	margin: 1rem auto 2rem;
 	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
+	font-size: 1.4rem;
+}
+@supports (font-variation-settings: "wght" 200) {
+	h3 {
+		font-family: var(--body-font-family);
+		letter-spacing: -0.1rem;
+	}
 }
 
 h2 {
@@ -104,6 +130,7 @@ a.active:active {
 
 .navbar {
 	padding: 0 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .nav-container {
@@ -120,7 +147,7 @@ a.navbar-brand {
 ul.navbar-nav {
 	width: 100% !important;
 	position: relative;
-	align-items: baseline;
+	align-items: center;
 }
 
 ul.navbar-nav li {
@@ -220,7 +247,6 @@ a.sleeping-link h3 {
 	top: 20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 1.8rem;
 	text-decoration: underline;
 }
 a.living-link h3:hover,
@@ -381,6 +407,11 @@ footer div {
 }
 
 @media (min-width: 680px) {
+	h1,
+	h2 {
+		font-size: 2.2rem;
+	}
+
 	#products-header-img {
 		background-image: linear-gradient(
 				rgb(255, 255, 255, 0.1),
@@ -400,6 +431,11 @@ footer div {
 }
 
 @media (min-width: 800px) {
+	h1,
+	h2 {
+		font-size: 2.4rem;
+	}
+
 	#products-header-img {
 		background-image: linear-gradient(
 				rgb(255, 255, 255, 0.1),
