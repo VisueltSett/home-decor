@@ -4,5 +4,6 @@
 	font-style: normal;
 	font-stretch: normal;
 	src: url("Inter.otf") format("opentype");
+	src: url("Inter.woff2") format("woff2");
 	font-display: swap;
 }
