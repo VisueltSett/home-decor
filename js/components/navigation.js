@@ -17,7 +17,7 @@ let productsLink = `<a class="nav-link ${pathname === "/products.html" ? "active
 
 
 navContainer.innerHTML = `<nav class="navbar navbar-expand-md navbar-light bg-light">
-<a class="navbar-brand" href="/index.html"><img src="./images/home-decor-logo-large-black-moniqa.svg"> - Stylish Living</a>
+<a class="navbar-brand" href="index.html"><img src="./images/home-decor-logo-large-black-moniqa.svg"> - Stylish Living</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
