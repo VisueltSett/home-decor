@@ -18,16 +18,14 @@
 }
 :root {
 	--body-font-family: "Inter", "Open Sans", sans-serif;
-	--inter-wght: 200;
 	--header-font-family: "Moniqa", "Open Sans Condensed", sans-serif;
-	--moniqa-wght: 200;
+	--font-wght: 300;
 	--moniqa-opsz: 90;
 }
 
 * {
 	box-sizing: border-box;
-	font-variation-settings: "wght" var(--inter-wght) var(--moniqa-wght),
-		"opsz" (--moniqa-opsz);
+	font-variation-settings: "wght" var(--font-wght), "opsz" var(--moniqa-opsz);
 }
 html,
 body {
@@ -41,8 +39,8 @@ body {
 	flex-flow: column nowrap;
 	font-family: "Open Sans", sans-serif;
 	background-image: linear-gradient(
-			rgb(252, 252, 252, 0.9),
-			rgba(252, 252, 252, 0.9)
+			rgb(252, 252, 252, 0.95),
+			rgba(252, 252, 252, 0.95)
 		),
 		url(.././images/home-decor-logo_small-grey-moniqa.svg);
 	background-repeat: repeat;
@@ -65,13 +63,14 @@ h2 {
 	color: rgba(140, 31, 91, 1);
 	margin: 0 auto;
 	padding-left: 2rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-shadow: -1px 1px 1px rgba(215, 217, 217, 1);
 }
 @supports (font-variation-settings: "wght" 200) {
 	h1,
 	h2 {
 		font-family: var(--header-font-family);
+		/* --font-wght: 400; */
 	}
 }
 
@@ -79,7 +78,7 @@ h3 {
 	font-family: "Open Sans Condensed", sans-serif;
 	margin: 1rem auto 2rem;
 	text-shadow: -1px 1px 3px rgba(252, 252, 252, 1);
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 }
 @supports (font-variation-settings: "wght" 200) {
 	h3 {
@@ -172,7 +171,7 @@ input.form-control {
 .btn {
 	border: 1px solid rgba(140, 31, 91, 1);
 	background-color: rgba(140, 31, 91, 1);
-	color: rgba(252, 252, 252, 1);
+	color: rgba(252, 252, 252, 1) !important;
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
 	font-size: 0.95rem !important;
@@ -216,16 +215,47 @@ input.form-control {
 	padding-bottom: 1rem;
 	min-height: 100%;
 	justify-content: center;
+	align-items: flex-start;
 }
 
+.product {
+	max-width: 400px;
+	min-height: 600px;
+	padding: 1rem;
+	position: relative;
+}
 .product img {
 	width: 100%;
 	max-width: 600px;
 	filter: opacity(0.9);
 }
 .product-category {
-	font-size: 0.8rem;
-	color: rgba(21, 38, 16, 0.6);
+	font-size: 0.75rem;
+	color: rgba(39, 115, 107, 0.6);
+	margin-bottom: 1rem;
+}
+.product-title {
+	color: rgba(140, 31, 91, 1);
+	font-size: 1.2rem;
+	margin-bottom: 0;
+}
+.short-description span {
+	display: block;
+	color: rgba(39, 115, 107, 1);
+	text-decoration: underline;
+	line-height: 1.8;
+}
+.short-description {
+	font-size: 0.9rem;
+	padding-bottom: 3rem;
+}
+
+.product a.btn {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	border-top-left-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
 }
 
 .link-container,
@@ -301,11 +331,11 @@ a.sleeping-link h3:hover {
 }
 
 .view-all-link {
-	margin: 2rem auto;
+	margin: 0 auto 5rem;
 }
 
 .view-all-link a {
-	padding: 0.5rem 1.5rem;
+	padding: 1rem 2rem;
 	border: 1px solid rgba(140, 31, 91, 1);
 	background-color: rgba(140, 31, 91, 1);
 	color: rgba(252, 252, 252, 1) !important;
@@ -325,8 +355,31 @@ a.sleeping-link h3:hover {
 	text-decoration: underline;
 }
 
+.star-group {
+	margin: 2rem auto 0;
+	color: yellow;
+	text-shadow: -0.5px -0.5px 0.5px rgba(21, 38, 16, 0.7),
+		0.5px 0.5px 0.5px rgba(21, 38, 16, 0.7);
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid rgba(21, 38, 16, 0.7);
+}
+.card-group-header {
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(252, 252, 252, 1) !important;
+	padding: 0.5rem 1rem;
+	border-top: 1px solid rgba(21, 38, 16, 0.1);
+}
+.card-footer {
+	background-color: rgba(252, 252, 252, 1) !important;
+}
+
+.card-footer span {
+	font-style: italic;
+}
+
 footer {
-	margin-top: 0.5rem;
+	margin-top: 5rem;
 	background-color: rgba(252, 252, 252, 1);
 	display: flex;
 	flex-shrink: 0;
@@ -379,7 +432,7 @@ footer div {
 @media (max-width: 480px) {
 	#products-header-img {
 		visibility: hidden;
-		height: 140px;
+		height: 2rem;
 	}
 
 	.link-container.living {
